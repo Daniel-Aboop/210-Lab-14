@@ -1,3 +1,6 @@
+// COMSC-210 | Lab 14 | Daniel Santisteban
+// IDE used: VS Code
+
 #include <iostream>
 #include <iomanip>
 using namespace std;
