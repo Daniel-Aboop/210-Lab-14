@@ -1,4 +1,5 @@
 #include <iostream>;
+#include <iomanip>;
 using namespace std;
 
 class Color{
@@ -28,14 +29,15 @@ class Color{
     }
 };
 void print(Color C){
-    cout<<endl;
-    cout<<""<<endl;
-    cout<<C.getR()<<endl;
-    cout<<C.getG()<<endl;
-    cout<<C.getB()<<endl;
+    cout<<C.getName()
+    <<":  R:"<<C.getR()
+    <<" G:"<<C.getG()
+    <<" B:"<<C.getB()
+    <<endl;
 }
 
 int main(){
+    cout<<fixed<<setprecision(2);
     Color Aqua;
     Color Yellow;
     Color Purple;
@@ -48,7 +50,11 @@ int main(){
     Black.setRGBandName(0,0,0,"Black");
     White.setRGBandName(255,255,255,"White");
     Red.setRGBandName(255,0,0,"Red");
-    
-    
+    print(Aqua);
+    print(Yellow);
+    print(Purple);
+    print(Black);
+    print(White);
+    print(Red);
     return 1;
 }
