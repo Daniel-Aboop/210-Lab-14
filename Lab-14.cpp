@@ -9,6 +9,7 @@ class Color{
     int B;
     string Name;
     public:
+    //setRGBandName I added string name just to make sense on what color I was adding and also added a private string to hold the name
     void setRGBandName(int cR,int cG,int cB,string Name){
         R=cR;
         G=cG;
@@ -29,10 +30,10 @@ class Color{
     }
 };
 void print(Color C){
-    cout<<C.getName()
-    <<":  R:"<<C.getR()
-    <<" G:"<<C.getG()
-    <<" B:"<<C.getB()
+    cout<<left<<setw(10)<<C.getName()
+    <<"R: "<<setw(4)<<C.getR()
+    <<"G: "<<setw(4)<<C.getG()
+    <<"B: "<<setw(4)<<C.getB()
     <<endl;
 }
 
