@@ -1,5 +1,5 @@
-#include <iostream>;
-#include <iomanip>;
+#include <iostream>
+#include <iomanip>
 using namespace std;
 
 class Color{
@@ -29,6 +29,7 @@ class Color{
         return Name;
     }
 };
+
 void print(Color C){
     cout<<left<<setw(10)<<C.getName()
     <<"R: "<<setw(4)<<C.getR()
